@@ -1,0 +1,81 @@
+{
+  "protocol": {
+    "population": "canonical full clean-valid",
+    "retrieval": "exact cosine",
+    "blocks": 5
+  },
+  "Bill-Contra": {
+    "queries": 656,
+    "documents": 2558,
+    "data_audit": {
+      "raw_rows": 676,
+      "unique_queries": 666,
+      "excluded_missing_ground_truth": 10,
+      "excluded_missing_inversion": 30,
+      "excluded_label_collision": 0,
+      "valid_query_population": 656,
+      "clean_valid_query_population": 656,
+      "paired_query_population": 626,
+      "evaluated_queries": 656,
+      "population_mode": "full_clean_valid",
+      "aggregation": "NFKC + whitespace canonical query; union labels/atoms/inversions; full clean-valid population"
+    },
+    "results": {
+      "hit@3": 90.5488,
+      "ndcg@3": 51.5854,
+      "hit@5": 93.2927,
+      "ndcg@5": 69.2235,
+      "hit@10": 94.6646,
+      "ndcg@10": 71.0549,
+      "hit@20": 97.2561,
+      "ndcg@20": 72.0046
+    },
+    "block_std": {
+      "hit@3": 3.0108,
+      "ndcg@3": 2.0652,
+      "hit@5": 1.5677,
+      "ndcg@5": 1.6416,
+      "hit@10": 1.6079,
+      "ndcg@10": 1.6063,
+      "hit@20": 1.4174,
+      "ndcg@20": 1.5844
+    }
+  },
+  "Juris-Logic": {
+    "queries": 1455,
+    "documents": 2902,
+    "data_audit": {
+      "raw_rows": 1523,
+      "unique_queries": 1457,
+      "excluded_missing_ground_truth": 0,
+      "excluded_missing_inversion": 5,
+      "excluded_label_collision": 2,
+      "valid_query_population": 1457,
+      "clean_valid_query_population": 1455,
+      "paired_query_population": 1450,
+      "evaluated_queries": 1455,
+      "population_mode": "full_clean_valid",
+      "aggregation": "NFKC + whitespace canonical query; union labels/atoms/inversions; full clean-valid population"
+    },
+    "results": {
+      "hit@3": 69.0722,
+      "ndcg@3": 51.4842,
+      "hit@5": 75.0515,
+      "ndcg@5": 53.954,
+      "hit@10": 81.2371,
+      "ndcg@10": 55.9604,
+      "hit@20": 84.7423,
+      "ndcg@20": 56.8529
+    },
+    "block_std": {
+      "hit@3": 2.2482,
+      "ndcg@3": 1.3925,
+      "hit@5": 2.7024,
+      "ndcg@5": 1.4121,
+      "hit@10": 2.1907,
+      "ndcg@10": 1.2348,
+      "hit@20": 2.4647,
+      "ndcg@20": 1.2213
+    }
+  }
+}

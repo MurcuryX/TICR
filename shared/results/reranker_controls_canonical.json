@@ -1,0 +1,103 @@
+{
+  "protocol": {
+    "encoder": "BAAI/bge-base-en-v1.5",
+    "reranker": "cross-encoder/nli-deberta-v3-base",
+    "candidate_k": 20,
+    "retrieval": "exact cosine",
+    "generation": "cached benchmark atoms; excluded from latency",
+    "gpu": "NVIDIA RTX 6000D",
+    "torch": "2.13.0+cu130",
+    "batch_embed": 64,
+    "batch_nli": 20
+  },
+  "Bill-Contra": {
+    "queries": 626,
+    "documents": 2558,
+    "data_audit": {
+      "raw_rows": 676,
+      "unique_queries": 666,
+      "excluded_missing_ground_truth": 10,
+      "excluded_missing_inversion": 30,
+      "excluded_label_collision": 0,
+      "valid_query_population": 656,
+      "clean_valid_query_population": 656,
+      "paired_query_population": 626,
+      "evaluated_queries": 626,
+      "population_mode": "paired",
+      "aggregation": "NFKC + whitespace canonical query; union labels/atoms/inversions; paired valid subset"
+    },
+    "results": {
+      "original_bge": {
+        "hit@3": 90.0958,
+        "hit@10": 94.4089,
+        "hit@20": 97.1246,
+        "ndcg@3": 51.2742,
+        "ndcg@10": 70.7065,
+        "ndcg@20": 71.7018
+      },
+      "original_plus_nli": {
+        "hit@3": 83.3866,
+        "hit@10": 95.3674,
+        "hit@20": 97.1246,
+        "ndcg@3": 58.3156,
+        "ndcg@10": 70.6624,
+        "ndcg@20": 72.3141,
+        "mean_latency_ms_excl_generation": 43.42
+      },
+      "ticr_plus_nli": {
+        "hit@3": 80.6709,
+        "hit@10": 96.9649,
+        "hit@20": 99.2013,
+        "ndcg@3": 55.0023,
+        "ndcg@10": 69.7128,
+        "ndcg@20": 71.6594,
+        "mean_latency_ms_excl_generation": 46.716
+      }
+    }
+  },
+  "Juris-Logic": {
+    "queries": 1450,
+    "documents": 2902,
+    "data_audit": {
+      "raw_rows": 1523,
+      "unique_queries": 1457,
+      "excluded_missing_ground_truth": 0,
+      "excluded_missing_inversion": 5,
+      "excluded_label_collision": 2,
+      "valid_query_population": 1457,
+      "clean_valid_query_population": 1455,
+      "paired_query_population": 1450,
+      "evaluated_queries": 1450,
+      "population_mode": "paired",
+      "aggregation": "NFKC + whitespace canonical query; union labels/atoms/inversions; paired valid subset"
+    },
+    "results": {
+      "original_bge": {
+        "hit@3": 69.0345,
+        "hit@10": 81.2414,
+        "hit@20": 84.7586,
+        "ndcg@3": 51.4458,
+        "ndcg@10": 55.9344,
+        "ndcg@20": 56.83
+      },
+      "original_plus_nli": {
+        "hit@3": 63.3793,
+        "hit@10": 81.4483,
+        "hit@20": 84.7586,
+        "ndcg@3": 52.7747,
+        "ndcg@10": 59.6235,
+        "ndcg@20": 60.4847,
+        "mean_latency_ms_excl_generation": 46.647
+      },
+      "ticr_plus_nli": {
+        "hit@3": 64.8966,
+        "hit@10": 84.7586,
+        "hit@20": 88.1379,
+        "ndcg@3": 53.2607,
+        "ndcg@10": 60.7547,
+        "ndcg@20": 61.6369,
+        "mean_latency_ms_excl_generation": 53.738
+      }
+    }
+  }
+}

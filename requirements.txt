@@ -1,0 +1,8 @@
+numpy
+pandas
+torch
+sentence-transformers
+transformers
+tqdm
+scikit-learn
+rank-bm25

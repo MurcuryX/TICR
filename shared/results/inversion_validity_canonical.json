@@ -1,0 +1,49 @@
+{
+  "protocol": {
+    "diagnostic": "automatic, not human annotation",
+    "criterion": "NLI argmax label is contradiction",
+    "score": "contradiction logit margin over max(entailment, neutral)"
+  },
+  "Bill-Contra": {
+    "queries": 626,
+    "data_audit": {
+      "raw_rows": 676,
+      "unique_queries": 666,
+      "excluded_missing_ground_truth": 10,
+      "excluded_missing_inversion": 30,
+      "excluded_label_collision": 0,
+      "valid_query_population": 656,
+      "clean_valid_query_population": 656,
+      "paired_query_population": 626,
+      "evaluated_queries": 626,
+      "population_mode": "paired",
+      "aggregation": "NFKC + whitespace canonical query; union labels/atoms/inversions; paired clean-valid subset"
+    },
+    "paired_atomic_inversions": 5368,
+    "contradiction_argmax_rate": 92.1759,
+    "mean_contradiction_margin": 7.0713,
+    "median_query_validity_rate": 100.0,
+    "queries_all_inversions_valid_rate": 57.3482
+  },
+  "Juris-Logic": {
+    "queries": 1450,
+    "data_audit": {
+      "raw_rows": 1523,
+      "unique_queries": 1457,
+      "excluded_missing_ground_truth": 0,
+      "excluded_missing_inversion": 5,
+      "excluded_label_collision": 2,
+      "valid_query_population": 1457,
+      "clean_valid_query_population": 1455,
+      "paired_query_population": 1450,
+      "evaluated_queries": 1450,
+      "population_mode": "paired",
+      "aggregation": "NFKC + whitespace canonical query; union labels/atoms/inversions; paired clean-valid subset"
+    },
+    "paired_atomic_inversions": 15374,
+    "contradiction_argmax_rate": 89.17,
+    "mean_contradiction_margin": 6.5906,
+    "median_query_validity_rate": 93.3333,
+    "queries_all_inversions_valid_rate": 44.7514
+  }
+}

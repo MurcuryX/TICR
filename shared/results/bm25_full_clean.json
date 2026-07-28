@@ -1,0 +1,192 @@
+{
+  "Bill-Contra": {
+    "queries": 656,
+    "documents": 2558,
+    "data_audit": {
+      "raw_rows": 676,
+      "unique_queries": 666,
+      "excluded_missing_ground_truth": 10,
+      "excluded_missing_inversion": 30,
+      "excluded_label_collision": 0,
+      "valid_query_population": 656,
+      "clean_valid_query_population": 656,
+      "paired_query_population": 626,
+      "evaluated_queries": 656,
+      "population_mode": "full_clean_valid",
+      "aggregation": "NFKC + whitespace canonical query; union labels/atoms/inversions; full clean-valid population"
+    },
+    "metrics": {
+      "hit@3": 87.3476,
+      "hit@5": 87.3476,
+      "hit@10": 87.9573,
+      "hit@20": 88.1098,
+      "ndcg@3": 79.8093,
+      "ndcg@5": 83.7863,
+      "ndcg@10": 84.0012,
+      "ndcg@20": 84.0441
+    },
+    "block_means": {
+      "hit@3": [
+        90.1515,
+        85.4962,
+        86.2595,
+        89.313,
+        85.4962
+      ],
+      "hit@5": [
+        90.1515,
+        85.4962,
+        86.2595,
+        89.313,
+        85.4962
+      ],
+      "hit@10": [
+        90.1515,
+        87.0229,
+        86.2595,
+        90.0763,
+        86.2595
+      ],
+      "hit@20": [
+        90.1515,
+        87.0229,
+        86.2595,
+        90.0763,
+        87.0229
+      ],
+      "ndcg@3": [
+        83.7926,
+        76.3083,
+        80.3312,
+        81.3175,
+        77.2667
+      ],
+      "ndcg@5": [
+        87.3731,
+        80.9447,
+        83.5564,
+        85.3285,
+        81.7014
+      ],
+      "ndcg@10": [
+        87.3731,
+        81.4151,
+        83.5564,
+        85.4953,
+        82.1404
+      ],
+      "ndcg@20": [
+        87.3731,
+        81.4151,
+        83.5564,
+        85.4953,
+        82.3552
+      ]
+    },
+    "block_std": {
+      "hit@3": 1.9882,
+      "hit@5": 1.9882,
+      "hit@10": 1.7857,
+      "hit@20": 1.6626,
+      "ndcg@3": 2.7253,
+      "ndcg@5": 2.3545,
+      "ndcg@10": 2.1886,
+      "ndcg@20": 2.1536
+    }
+  },
+  "Juris-Logic": {
+    "queries": 1455,
+    "documents": 2902,
+    "data_audit": {
+      "raw_rows": 1523,
+      "unique_queries": 1457,
+      "excluded_missing_ground_truth": 0,
+      "excluded_missing_inversion": 5,
+      "excluded_label_collision": 2,
+      "valid_query_population": 1457,
+      "clean_valid_query_population": 1455,
+      "paired_query_population": 1450,
+      "evaluated_queries": 1455,
+      "population_mode": "full_clean_valid",
+      "aggregation": "NFKC + whitespace canonical query; union labels/atoms/inversions; full clean-valid population"
+    },
+    "metrics": {
+      "hit@3": 74.8454,
+      "hit@5": 79.4502,
+      "hit@10": 82.543,
+      "hit@20": 85.0172,
+      "ndcg@3": 63.6544,
+      "ndcg@5": 65.5623,
+      "ndcg@10": 66.5617,
+      "ndcg@20": 67.1837
+    },
+    "block_means": {
+      "hit@3": [
+        75.945,
+        76.6323,
+        77.6632,
+        73.8832,
+        70.1031
+      ],
+      "hit@5": [
+        79.7251,
+        81.4433,
+        82.4742,
+        78.6942,
+        74.9141
+      ],
+      "hit@10": [
+        83.8488,
+        84.1924,
+        84.8797,
+        81.7869,
+        78.0069
+      ],
+      "hit@20": [
+        86.9416,
+        85.9107,
+        87.2852,
+        85.9107,
+        79.0378
+      ],
+      "ndcg@3": [
+        63.152,
+        66.0259,
+        65.5473,
+        64.8315,
+        58.7154
+      ],
+      "ndcg@5": [
+        64.7348,
+        67.9925,
+        67.4988,
+        66.8583,
+        60.7271
+      ],
+      "ndcg@10": [
+        66.0978,
+        68.8329,
+        68.2658,
+        67.8289,
+        61.783
+      ],
+      "ndcg@20": [
+        66.8695,
+        69.2703,
+        68.8529,
+        68.8639,
+        62.062
+      ]
+    },
+    "block_std": {
+      "hit@3": 2.6742,
+      "hit@5": 2.6207,
+      "hit@10": 2.4913,
+      "hit@20": 3.0396,
+      "ndcg@3": 2.6548,
+      "ndcg@5": 2.6608,
+      "ndcg@10": 2.5581,
+      "ndcg@20": 2.6942
+    }
+  }
+}

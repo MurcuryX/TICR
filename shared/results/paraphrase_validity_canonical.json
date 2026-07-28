@@ -1,0 +1,22 @@
+{
+  "protocol": {
+    "diagnostic": "automatic, not human annotation",
+    "criterion": "entailment argmax in both directions"
+  },
+  "Bill-Contra": {
+    "queries": 626,
+    "queries_with_3_paraphrases": 626,
+    "generated_paraphrases": 1878,
+    "forward_entailment_rate": 98.2428,
+    "backward_entailment_rate": 71.033,
+    "bidirectional_entailment_rate": 70.2875
+  },
+  "Juris-Logic": {
+    "queries": 1450,
+    "queries_with_3_paraphrases": 1435,
+    "generated_paraphrases": 4373,
+    "forward_entailment_rate": 95.7009,
+    "backward_entailment_rate": 70.7523,
+    "bidirectional_entailment_rate": 69.1973
+  }
+}

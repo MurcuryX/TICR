@@ -1,0 +1,191 @@
+{
+  "protocol": {
+    "lambdas": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      1.0,
+      1.5,
+      2.0
+    ],
+    "population": "canonical paired subset",
+    "metrics": "Hit@20, MRR, pair margin, pair win, original-top20 overlap"
+  },
+  "Bill-Contra": {
+    "queries": 626,
+    "data_audit": {
+      "raw_rows": 676,
+      "unique_queries": 666,
+      "excluded_missing_ground_truth": 10,
+      "excluded_missing_inversion": 30,
+      "excluded_label_collision": 0,
+      "valid_query_population": 656,
+      "clean_valid_query_population": 656,
+      "paired_query_population": 626,
+      "evaluated_queries": 626,
+      "population_mode": "paired",
+      "aggregation": "NFKC + whitespace canonical query; union labels/atoms/inversions; paired valid subset"
+    },
+    "results": {
+      "inverse_only": {
+        "hit20": 99.2013,
+        "mrr": 81.8931,
+        "pair_margin": 0.0374,
+        "pair_win": 76.0383,
+        "overlap20": 45.5032
+      },
+      "q_plus_inverse": {
+        "hit20": 99.2013,
+        "mrr": 78.1847,
+        "pair_margin": 0.0119,
+        "pair_win": 65.4952,
+        "overlap20": 81.1981
+      },
+      "inverse_prefix_q": {
+        "hit20": 99.6805,
+        "mrr": 81.9257,
+        "pair_margin": 0.0209,
+        "pair_win": 70.4473,
+        "overlap20": 70.2396
+      },
+      "vec_lambda_0": {
+        "hit20": 97.1246,
+        "mrr": 69.1457,
+        "pair_margin": -0.0128,
+        "pair_win": 54.3131,
+        "overlap20": 100.0
+      },
+      "vec_lambda_0.25": {
+        "hit20": 99.0415,
+        "mrr": 73.4925,
+        "pair_margin": -0.0009,
+        "pair_win": 59.5847,
+        "overlap20": 88.3946
+      },
+      "vec_lambda_0.5": {
+        "hit20": 99.361,
+        "mrr": 76.5187,
+        "pair_margin": 0.0076,
+        "pair_win": 62.9393,
+        "overlap20": 79.361
+      },
+      "vec_lambda_0.75": {
+        "hit20": 99.8403,
+        "mrr": 79.0412,
+        "pair_margin": 0.0134,
+        "pair_win": 66.1342,
+        "overlap20": 73.2428
+      },
+      "vec_lambda_1": {
+        "hit20": 99.8403,
+        "mrr": 81.4627,
+        "pair_margin": 0.0175,
+        "pair_win": 69.3291,
+        "overlap20": 68.7061
+      },
+      "vec_lambda_1.5": {
+        "hit20": 100.0,
+        "mrr": 83.3696,
+        "pair_margin": 0.0226,
+        "pair_win": 72.524,
+        "overlap20": 62.8195
+      },
+      "vec_lambda_2": {
+        "hit20": 100.0,
+        "mrr": 84.5718,
+        "pair_margin": 0.0256,
+        "pair_win": 74.2812,
+        "overlap20": 59.2332
+      }
+    }
+  },
+  "Juris-Logic": {
+    "queries": 1450,
+    "data_audit": {
+      "raw_rows": 1523,
+      "unique_queries": 1457,
+      "excluded_missing_ground_truth": 0,
+      "excluded_missing_inversion": 5,
+      "excluded_label_collision": 2,
+      "valid_query_population": 1457,
+      "clean_valid_query_population": 1455,
+      "paired_query_population": 1450,
+      "evaluated_queries": 1450,
+      "population_mode": "paired",
+      "aggregation": "NFKC + whitespace canonical query; union labels/atoms/inversions; paired valid subset"
+    },
+    "results": {
+      "inverse_only": {
+        "hit20": 93.1034,
+        "mrr": 64.7373,
+        "pair_margin": 0.0724,
+        "pair_win": 77.0345,
+        "overlap20": 33.131
+      },
+      "q_plus_inverse": {
+        "hit20": 88.1379,
+        "mrr": 57.1733,
+        "pair_margin": -0.0043,
+        "pair_win": 45.8621,
+        "overlap20": 79.6103
+      },
+      "inverse_prefix_q": {
+        "hit20": 91.1034,
+        "mrr": 62.3175,
+        "pair_margin": 0.0151,
+        "pair_win": 53.3793,
+        "overlap20": 67.9241
+      },
+      "vec_lambda_0": {
+        "hit20": 84.7586,
+        "mrr": 48.1133,
+        "pair_margin": -0.0433,
+        "pair_win": 34.7586,
+        "overlap20": 100.0
+      },
+      "vec_lambda_0.25": {
+        "hit20": 86.9655,
+        "mrr": 55.1019,
+        "pair_margin": -0.0179,
+        "pair_win": 42.8276,
+        "overlap20": 86.2724
+      },
+      "vec_lambda_0.5": {
+        "hit20": 89.6552,
+        "mrr": 59.7412,
+        "pair_margin": 0.0005,
+        "pair_win": 48.7586,
+        "overlap20": 75.8069
+      },
+      "vec_lambda_0.75": {
+        "hit20": 92.6897,
+        "mrr": 63.2881,
+        "pair_margin": 0.0136,
+        "pair_win": 54.4138,
+        "overlap20": 67.669
+      },
+      "vec_lambda_1": {
+        "hit20": 94.2759,
+        "mrr": 66.0856,
+        "pair_margin": 0.023,
+        "pair_win": 58.6207,
+        "overlap20": 61.3897
+      },
+      "vec_lambda_1.5": {
+        "hit20": 96.3448,
+        "mrr": 69.4019,
+        "pair_margin": 0.0353,
+        "pair_win": 64.9655,
+        "overlap20": 53.2138
+      },
+      "vec_lambda_2": {
+        "hit20": 96.5517,
+        "mrr": 70.4549,
+        "pair_margin": 0.0428,
+        "pair_win": 68.069,
+        "overlap20": 48.5655
+      }
+    }
+  }
+}

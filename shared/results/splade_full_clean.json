@@ -1,0 +1,85 @@
+{
+  "protocol": {
+    "population": "canonical full clean-valid",
+    "model": "naver/splade-cocondenser-ensembledistil",
+    "pooling": "max(log(1 + relu(MLM logits)))",
+    "retrieval": "exact sparse dot product",
+    "blocks": 5,
+    "batch_size": 8,
+    "max_length": 256
+  },
+  "Bill-Contra": {
+    "queries": 656,
+    "documents": 2558,
+    "data_audit": {
+      "raw_rows": 676,
+      "unique_queries": 666,
+      "excluded_missing_ground_truth": 10,
+      "excluded_missing_inversion": 30,
+      "excluded_label_collision": 0,
+      "valid_query_population": 656,
+      "clean_valid_query_population": 656,
+      "paired_query_population": 626,
+      "evaluated_queries": 656,
+      "population_mode": "full_clean_valid",
+      "aggregation": "NFKC + whitespace canonical query; union labels/atoms/inversions; full clean-valid population"
+    },
+    "results": {
+      "hit@3": 90.7012,
+      "ndcg@3": 62.0025,
+      "hit@5": 91.311,
+      "ndcg@5": 76.7915,
+      "hit@10": 92.5305,
+      "ndcg@10": 77.7322,
+      "hit@20": 95.7317,
+      "ndcg@20": 78.4669
+    },
+    "block_std": {
+      "hit@3": 2.5828,
+      "ndcg@3": 2.1473,
+      "hit@5": 2.0914,
+      "ndcg@5": 2.0904,
+      "hit@10": 1.7746,
+      "ndcg@10": 2.0585,
+      "hit@20": 1.4198,
+      "ndcg@20": 1.9407
+    }
+  },
+  "Juris-Logic": {
+    "queries": 1455,
+    "documents": 2902,
+    "data_audit": {
+      "raw_rows": 1523,
+      "unique_queries": 1457,
+      "excluded_missing_ground_truth": 0,
+      "excluded_missing_inversion": 5,
+      "excluded_label_collision": 2,
+      "valid_query_population": 1457,
+      "clean_valid_query_population": 1455,
+      "paired_query_population": 1450,
+      "evaluated_queries": 1455,
+      "population_mode": "full_clean_valid",
+      "aggregation": "NFKC + whitespace canonical query; union labels/atoms/inversions; full clean-valid population"
+    },
+    "results": {
+      "hit@3": 76.4261,
+      "ndcg@3": 63.0922,
+      "hit@5": 81.4433,
+      "ndcg@5": 65.1686,
+      "hit@10": 84.811,
+      "ndcg@10": 66.2652,
+      "hit@20": 87.4227,
+      "ndcg@20": 66.9338
+    },
+    "block_std": {
+      "hit@3": 2.676,
+      "ndcg@3": 2.1546,
+      "hit@5": 2.0038,
+      "ndcg@5": 1.8563,
+      "hit@10": 1.771,
+      "ndcg@10": 1.9464,
+      "hit@20": 2.1471,
+      "ndcg@20": 2.0752
+    }
+  }
+}

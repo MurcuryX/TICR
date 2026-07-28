@@ -1,0 +1,110 @@
+{
+  "Bill-Contra": {
+    "queries": 626,
+    "documents": 2558,
+    "data_audit": {
+      "raw_rows": 676,
+      "unique_queries": 666,
+      "excluded_missing_ground_truth": 10,
+      "excluded_missing_inversion": 30,
+      "excluded_label_collision": 0,
+      "valid_query_population": 656,
+      "clean_valid_query_population": 656,
+      "paired_query_population": 626,
+      "evaluated_queries": 626,
+      "aggregation": "NFKC + whitespace canonical query; union labels/atoms/inversions; paired valid subset"
+    },
+    "results": {
+      "original": {
+        "hit@20": 97.1246,
+        "mrr": 69.1457,
+        "pair_margin": -0.0128,
+        "pair_win_rate": 54.3131
+      },
+      "decomposition_only": {
+        "hit@20": 96.4856,
+        "mrr": 68.5661,
+        "pair_margin": -0.0108,
+        "pair_win_rate": 52.8754
+      },
+      "direct_negation": {
+        "hit@20": 96.8051,
+        "mrr": 70.6192,
+        "pair_margin": -0.0049,
+        "pair_win_rate": 56.3898
+      },
+      "shuffled_inversion": {
+        "hit@20": 92.0128,
+        "mrr": 70.1132,
+        "pair_margin": 0.0026,
+        "pair_win_rate": 58.7859
+      },
+      "inverse_only": {
+        "hit@20": 99.2013,
+        "mrr": 81.8931,
+        "pair_margin": 0.0374,
+        "pair_win_rate": 76.0383
+      },
+      "query_plus_inverse": {
+        "hit@20": 99.2013,
+        "mrr": 78.1847,
+        "pair_margin": 0.0119,
+        "pair_win_rate": 65.4952
+      }
+    }
+  },
+  "Juris-Logic": {
+    "queries": 1450,
+    "documents": 2902,
+    "data_audit": {
+      "raw_rows": 1523,
+      "unique_queries": 1457,
+      "excluded_missing_ground_truth": 0,
+      "excluded_missing_inversion": 5,
+      "excluded_label_collision": 2,
+      "valid_query_population": 1457,
+      "clean_valid_query_population": 1455,
+      "paired_query_population": 1450,
+      "evaluated_queries": 1450,
+      "aggregation": "NFKC + whitespace canonical query; union labels/atoms/inversions; paired valid subset"
+    },
+    "results": {
+      "original": {
+        "hit@20": 84.7586,
+        "mrr": 48.1213,
+        "pair_margin": -0.0433,
+        "pair_win_rate": 34.7586
+      },
+      "decomposition_only": {
+        "hit@20": 85.7931,
+        "mrr": 49.4665,
+        "pair_margin": -0.0319,
+        "pair_win_rate": 35.7241
+      },
+      "direct_negation": {
+        "hit@20": 85.2414,
+        "mrr": 51.7011,
+        "pair_margin": -0.024,
+        "pair_win_rate": 38.9655
+      },
+      "shuffled_inversion": {
+        "hit@20": 80.5517,
+        "mrr": 46.9459,
+        "pair_margin": -0.0263,
+        "pair_win_rate": 38.8966
+      },
+      "inverse_only": {
+        "hit@20": 93.1034,
+        "mrr": 64.7143,
+        "pair_margin": 0.0724,
+        "pair_win_rate": 77.0345
+      },
+      "query_plus_inverse": {
+        "hit@20": 88.1379,
+        "mrr": 57.1389,
+        "pair_margin": -0.0043,
+        "pair_win_rate": 45.8621
+      }
+    }
+  }
+}

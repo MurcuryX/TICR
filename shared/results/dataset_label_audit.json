@@ -1,0 +1,35 @@
+{
+  "Bill-Contra": {
+    "rows": 676,
+    "unique_queries": 666,
+    "missing_ground_truth": 10,
+    "missing_inversion_among_gt": 30,
+    "label_collisions": []
+  },
+  "Juris-Logic": {
+    "rows": 1523,
+    "unique_queries": 1467,
+    "missing_ground_truth": 0,
+    "missing_inversion_among_gt": 5,
+    "label_collisions": [
+      {
+        "query": "row54: 121,ARTICLE 4 STANDSTILL, ACQUISITIONS OF SECURITIES AND OTHER MATTERS SECTION 4.01 Acquisitions of Common Stock SECTION 4.02 No Participation in a Group or Solicitation of Proxies SECTION 4.03 Rights to Purchase New Securities SECTION 4.04 Takeover Proposals by the Investor Group SECTION 4.05 Affiliate Transactions SECTION 4.06 Termination of Standstill Provisions ARTICLE 5 RESTRICTIONS ON TRANSFERABILITY OF SECURITIES SECTION 5.01 General SECTION 5.02 Improper Sale or Encumbrance SECTION 5.03 Restrictive Legends SECTION 5.04 Sales of Significant Interests ARTICLE 6 CORPORATE OPPORTUNITIES AND RELATED MATTERS SECTION 6.01 Similar Activities or Lines of Business i -------------------------------------------------------------------------------- ARTICLE 7 REPRESENTATIONS AND WARRANTIES",
+        "rows": [
+          184
+        ],
+        "texts": [
+          "ARTICLE 4 STANDSTILL, ACQUISITIONS OF SECURITIES AND OTHER MATTERS SECTION 4.01 Acquisitions of Common Stock SECTION 4.02 No Participation in a Group or Solicitation of Proxies SECTION 4.03 Rights to Purchase New Securities SECTION 4.04 Takeover Proposals by the Investor Group SECTION 4.05 Affiliate Transactions SECTION 4.06 Termination of Standstill Provisions ARTICLE 5 RESTRICTIONS ON TRANSFERABILITY OF SECURITIES SECTION 5.01 General SECTION 5.02 Improper Sale or Encumbrance SECTION 5.03 Restrictive Legends SECTION 5.04 Sales of Significant Interests ARTICLE 6 CORPORATE OPPORTUNITIES AND RELATED MATTERS SECTION 6.01 Similar Activities or Lines of Business i -------------------------------------------------------------------------------- ARTICLE 7 REPRESENTATIONS AND WARRANTIES"
+        ]
+      },
+      {
+        "query": "row53: 121,Table of Contents ARTICLE 1 CERTAIN DEFINITIONS SECTION 1.01 Certain Definitions ARTICLE 2 CORPORATE GOVERNANCE SECTION 2.01 Composition of the Board SECTION 2.02 Vacancies SECTION 2.03 Committees SECTION 2.04 Certificate of Incorporation and By-Laws to Be Consistent SECTION 2.05 Approval of the Investor Group Required for Certain Actions SECTION 2.06 Approval of Independent Directors Required for Certain Actions ARTICLE 3 VOTING OF SHARES SECTION 3.01 Agreement with Respect to Voting of Common Stock",
+        "rows": [
+          1297
+        ],
+        "texts": [
+          "Table of Contents ARTICLE 1 CERTAIN DEFINITIONS SECTION 1.01 Certain Definitions ARTICLE 2 CORPORATE GOVERNANCE SECTION 2.01 Composition of the Board SECTION 2.02 Vacancies SECTION 2.03 Committees SECTION 2.04 Certificate of Incorporation and By-Laws to Be Consistent SECTION 2.05 Approval of the Investor Group Required for Certain Actions SECTION 2.06 Approval of Independent Directors Required for Certain Actions ARTICLE 3 VOTING OF SHARES SECTION 3.01 Agreement with Respect to Voting of Common Stock"
+        ]
+      }
+    ]
+  }
+}
